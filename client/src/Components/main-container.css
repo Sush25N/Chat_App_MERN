@@ -9,10 +9,9 @@
 .sidebar-container {
   flex: 30%;
   /* flex: 0.3;   */
-  border: 5px solid red;
 }
 
 .workArea-container {
   flex: 70%;
-  border: 5px solid blue;
+  background-color: aliceblue;
 }
