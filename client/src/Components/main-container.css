@@ -7,15 +7,10 @@
 }
 
 .sidebar-container {
-  flex: 30%;
-  /* flex: 0.3;   */
+  /* flex: 30%; */
+  flex: 0.3;
   display: flex;
   flex-direction: column;
-}
-
-.chatArea-container {
-  flex: 70%;
-  background-color: aliceblue;
 }
 
 .sb-header {
@@ -41,6 +36,7 @@
   border: none;
   margin-left: 10px;
   font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .sb-conversations {
@@ -95,23 +91,79 @@
 
 .con-lastMessage {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  padding: 5px;
 }
 
 .chatArea-container {
   display: flex;
   flex-direction: column;
+  flex: 0.7;
 }
 
 .chatArea-header {
-  background-color: orange;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
 }
 
-.message-container {
-  background-color: aquamarine;
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
 
+.message-container {
+  background-color: white;
+  flex: 1;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
 .text-input-area {
-  background-color: yellow;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-text-content {
+  background-color: #d9d9d9;
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  width: max-content;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.self-message-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.messageBox {
+  display: flex;
+  background-color: #63d7b0;
+  width: max-content;
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.self-timeStamp {
+  align-self: flex-end;
+  font-size: 0.75rem;
+  font-weight: lighter;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
