@@ -124,6 +124,12 @@
   padding: 10px 10px;
   margin: 10px;
   border-radius: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.message-container::-webkit-scrollbar {
+  display: none;
 }
 
 .text-input-area {
@@ -166,4 +172,22 @@
   font-size: 0.75rem;
   font-weight: lighter;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-logo {
+  height: 20vw;
+  transform: rotate(15deg);
+}
+
+.welcome-container {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.54);
+  border-bottom: 5px solid #63d7b0;
+  border-radius: 20px;
 }
