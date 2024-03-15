@@ -191,3 +191,33 @@
   border-bottom: 5px solid #63d7b0;
   border-radius: 20px;
 }
+
+.createGroups-container {
+  flex: 0.7;
+  align-self: center;
+  padding: 20px 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-container {
+  height: 90vh;
+  width: 90vw;
+  background-color: #f4f5f8;
+  border-radius: 20px;
+  display: flex;
+}
+
+.image-container {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  flex: 0.7;
+}
