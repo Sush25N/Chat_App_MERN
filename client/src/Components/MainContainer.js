@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./main-container.css";
 import Sidebar from "./Sidebar";
-import CreateGroups from "./CreateGroups";
+// import CreateGroups from "./CreateGroups";
 // import ChatArea from "./ChatArea";
+import User_Groups from "./User_Groups";
 // import WelCome from "./WelCome";
 
 const MainContainer = () => {
@@ -26,7 +27,8 @@ const MainContainer = () => {
   return (
     <div className="main-container">
       <Sidebar />
-      <CreateGroups />
+      <User_Groups />
+      {/* <CreateGroups /> */}
       {/* <WelCome /> */}
       {/* <ChatArea props={conversations[0]} /> */}
     </div>
