@@ -12,6 +12,7 @@ import ConversationsItem from "./ConversationsItem";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   const [lightTheme, setLightTheme] = useState(true);
   const [conversations, setConversations] = useState([
     {
@@ -30,13 +31,15 @@ const Sidebar = () => {
       timeStamp: "today",
     },
   ]);
-  const navigate = useNavigate();
+
   return (
     <div className="sidebar-container">
       <div className={"sb-header" + (lightTheme ? "" : " dark")}>
         <div>
           <IconButton>
-            <AccountCircleIcon className="icon" />
+            <AccountCircleIcon
+              className={"icon" + (lightTheme ? "" : " dark")}
+            />
           </IconButton>
         </div>
         <div>
@@ -45,21 +48,23 @@ const Sidebar = () => {
               navigate("users");
             }}
           >
-            <PersonAddIcon className="icon" />
+            <PersonAddIcon className={"icon" + (lightTheme ? "" : " dark")} />
           </IconButton>
           <IconButton
             onClick={() => {
               navigate("groups");
             }}
           >
-            <GroupAddIcon className="icon" />
+            <GroupAddIcon className={"icon" + (lightTheme ? "" : " dark")} />
           </IconButton>
           <IconButton
             onClick={() => {
               navigate("create-groups");
             }}
           >
-            <AddCircleOutlineIcon className="icon" />
+            <AddCircleOutlineIcon
+              className={"icon" + (lightTheme ? "" : " dark")}
+            />
           </IconButton>
           <IconButton
             onClick={() => {
@@ -67,7 +72,9 @@ const Sidebar = () => {
             }}
           >
             {lightTheme && <NightlightIcon />}
-            {!lightTheme && <LightModeIcon />}
+            {!lightTheme && (
+              <LightModeIcon className={"icon" + (lightTheme ? "" : " dark")} />
+            )}
           </IconButton>
         </div>
       </div>
