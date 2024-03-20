@@ -3,7 +3,7 @@ import { IconButton } from "@mui/material";
 import logo from "../icons/chat.png";
 import SearchIcon from "@mui/icons-material/Search";
 
-const User_Groups = () => {
+const Groups = () => {
   return (
     <div className="list-container">
       <div className="ug-header">
@@ -13,7 +13,7 @@ const User_Groups = () => {
               src={logo}
               style={{ height: "2rem", width: "2rem", marginLeft: "10px" }}
             />
-            <p className="ug-title">Online Users</p>
+            <p className="ug-title">Available Groups</p>
           </IconButton>
         </div>
       </div>
@@ -26,63 +26,63 @@ const User_Groups = () => {
       <div className="ug-list">
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
         <div className="list-item">
           <p className="con-icon">T</p>
-          <p className="con-title">Test User </p>
+          <p className="con-title">Test Groups </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default User_Groups;
+export default Groups;
