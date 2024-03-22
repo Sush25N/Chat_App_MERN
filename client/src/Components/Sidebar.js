@@ -8,45 +8,28 @@ import NightlightIcon from "@mui/icons-material/Nightlight";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
-import ConversationsItem from "./ConversationsItem";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../Features/themeSlice";
+import Conversations from "./Conversations";
 
 const Sidebar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const lightTheme = useSelector((state) => state.themeKey);
 
-  const [conversations, setConversations] = useState([
-    {
-      name: "Test-1",
-      lastMessage: "Last Messsage - 1",
-      timeStamp: "today",
-    },
-    {
-      name: "Test-2",
-      lastMessage: "Last Messsage - 2",
-      timeStamp: "today",
-    },
-    {
-      name: "Test-3",
-      lastMessage: "Last Messsage - 3",
-      timeStamp: "today",
-    },
-  ]);
-
   return (
     <div className="sidebar-container">
       <div className={"sb-header" + (lightTheme ? "" : " dark")}>
-        <div>
+        <div className="other-icons">
+          {/* <div> */}
           <IconButton>
             <AccountCircleIcon
               className={"icon" + (lightTheme ? "" : " dark")}
             />
           </IconButton>
-        </div>
-        <div>
+          {/* </div> */}
+          {/* <div> */}
           <IconButton
             onClick={() => {
               navigate("users");
@@ -80,21 +63,19 @@ const Sidebar = () => {
               <LightModeIcon className={"icon" + (lightTheme ? "" : " dark")} />
             )}
           </IconButton>
+          {/* </div> */}
         </div>
       </div>
-      <div className="sb-search">
+      <div className={"sb-search" + (lightTheme ? "" : " dark")}>
         <IconButton>
-          <SearchIcon />
+          <SearchIcon className={"icon" + (lightTheme ? "" : " dark")} />
         </IconButton>
-        <input placeholder="Search" className="search-box" />
+        <input
+          placeholder="Search"
+          className={"search-box" + (lightTheme ? "" : " dark")}
+        />
       </div>
-      <div className="sb-conversations">
-        {conversations.map((conversation) => {
-          return (
-            <ConversationsItem props={conversation} key={conversation.name} />
-          );
-        })}
-      </div>
+      <Conversations />
     </div>
   );
 };
